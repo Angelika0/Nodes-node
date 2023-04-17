@@ -3,12 +3,18 @@ const fs = require('fs');
 const os = require('os');
 const notes = require('./notes');
 var user = os.userInfo();
+const yargs = require('yargs');
+const argv = yargs.argv;
 //   const _ = require('lodash');
 let command = process.argv[2];
 console.log("komenda  ", command);
-console.log(process.argv);
+// console.log(process.argv);
+console.log("process: ", process.argv);
+console.log("Yargs:", argv);
+
 if (command === 'add'){
     console.log("dodawanie nowej notatki ");
+    notes.addNotes(argv.title, argv.body); 
     
 }
 else if(command === 'list'){
