@@ -1,6 +1,6 @@
 console.log('Starting node.js');
-// console.log(module);
-// module.exports.age = 24;
+console.log(module);
+module.exports.age = 24;
 
  let addNotes = (title, body) => {
     console.log('addNote ', title , body);
