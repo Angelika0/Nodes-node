@@ -10,6 +10,7 @@ console.log('Starting node.js');
     };
     
 };
+
 // module.exports.add = (a,b) =>  {
 //     console.log("dodawnie");
 //     return a+b;
